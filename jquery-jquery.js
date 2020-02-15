@@ -1,0 +1,3 @@
+//JQURY//
+
+//$(seletor).ação();
