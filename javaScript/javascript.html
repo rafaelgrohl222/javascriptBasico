@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!--português-caracteres-->
+		<title>Curso Javascript</title><!--titulo aba-->
+		<link rel="stylesheet" href="estilo.css">
+		<!--Javasript-->
+		<script language="javascript" src="script-validar_formulario.js"></script>
+		<!--Javasript-->
+	</head><!--head-->
+
+	<body>
+		<h3>Evento: onmouseleave, saiu do botão ele chama</h3>
+		<button class="botao" onmouseleave="mensagem('Rafael')">Click Aqui!</button>
+
+		<h3>//-----------//</h3>
+
+		<h3 id="mensagem">Ola Mundo!</h3>
+		<button class="botao-azul" onclick="mudaCor('blue')">Azul</button>
+		<button class="botao-vermelho" onclick="mudaCor('red')">Vermelho</button>
+
+		<h3>//-----------//</h3>
+
+		<form>
+			<input type="text" name="nome" id="nome" placeholder="Inserir seu nome!">
+			<input type="submit" onclick="valida()" value="Enviar Nome">
+		</form>
+
+	</body><!--body-->
+</html><!--html-->
+
+<!--client side: processada no cliente
+    indentar: boas praticas - dar espaços entre os códicos
+ -->

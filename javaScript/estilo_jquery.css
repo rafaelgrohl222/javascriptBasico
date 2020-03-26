@@ -1,0 +1,30 @@
+/*CSS*/
+body{
+	background-color: #98FB98;/*verde claro*/
+	color: #000000;/*Black*/
+}
+.botao{
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-
+	width: 130px;
+	height: 40px;
+	background-color: #7CFC00;
+}
+#azul{
+	background-color: #0000CD;
+	color: white;
+	border-radius: 10px;
+	width: 130px;
+	height: 40px;
+}
+#vermelho{
+	/*background-color: #FF0000;*/
+	color: #DCDCDC;
+	border-radius: 10px;
+	width: 130px;
+	height: 40px;
+}
+
+
+

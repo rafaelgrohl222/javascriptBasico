@@ -1,0 +1,33 @@
+/*estilo.css*/
+
+body{
+	background-color: #98FB98;// verde claro
+	color: #000000;// Black
+}
+.botao{
+	border-radius: 8px;
+	width: 80px;
+	height: 30px;
+	background-color: #7CFC00;
+}
+
+.botao-azul{
+	border-radius: 8px;
+	width: 80px;
+	height: 30px;
+	background-color: #00CED1;
+}
+
+.botao-vermelho{
+	border-radius: 8px;
+	width: 80px;
+	height: 30px;
+	background-color: #FF7F50;
+}
+input{
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100px;
+	height: 30px;
+	border-top-left-radius: 30px;
+}
