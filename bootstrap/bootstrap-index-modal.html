@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu Site Bootsrap</title>
+	<!-- CSS BOOTSTRAP-->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="utf-8">
+</head>
+<body>
+	<!--Modal-->
+	<div class="container"><!--Modal-->
+		<h1>Modal</h1>
+
+		<button class="btn btn-secondary" data-nome="Diego" data-toggle="modal" data-target="#conteudoModal">Mensagem para Diego</button>
+
+		<button class="btn btn-secondary" data-nome="Rafael" data-toggle="modal" data-target="#conteudoModal">Mensagem para Rafael</button>
+
+	</div><!--Modal-->
+
+	<!--MODAL-->
+	<div id="conteudoModal" class="modal fade">
+		<!--modal-dialog-centered: modal centralizada-->
+		<!--modal-dialog: modal topo-->
+		<!--modal-sm: modal pequeno-->
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<!--Titulo-->
+				<div class="modal-header">
+					<h4 class="modal-title">Meu Modal</h4>
+					<button class="close" data-dismiss="modal" arial-label="Fechar">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div><!--Titulo-Modal-->
+
+				<!--Conteudo-->
+				<div class="modal-body">
+						<!--colulas: col-nº - total = 12--
+						<div class="col-4" style="background-color: red">
+							Texto do meu modal parte 1.
+						</div>
+						<div class="col-4" style="background-color: blue">
+							Texto do meu modal parte 2.
+						</div>
+						<div class="col-4" style="background-color: green">
+							Texto do meu modal parte 3.
+						</div>-->
+						<div class="row">
+							<div class="col-4">
+								<span>Destinatário:</span>
+							</div><!--col-4-->
+							<div class="col-8">
+								<input type="text" name="para" class="form-control">
+							</div><!--col-8-->
+						</div><!--row-->
+
+						<br>
+
+						<div class="row">
+							<div class="col-4">
+								<span>Mensagem:</span>
+							</div><!--col-4-->
+							<div class="col-8">
+								<textarea class="form-control"></textarea>
+							</div><!--col-8-->
+						</div><!--row-->
+				</div><!--Conteudo-->
+
+				<!--Rodapé-Modal-->
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				</div><!--Rodapé-Modal-->
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<!-- JQuery BOOTSTRAP-->
+		<script src="public/js/jquery.js"></script>
+		<!-- JS BOOTSTRAP-->
+		<script src="public/js/bootstrap.bundle.min.js"></script>
+		<!--Jquery-modal-->
+		<script type="text/javascript">
+			$('#conteudoModal').on('show.bs.modal', function(event){
+				var button = $(event.relatedTarget);
+				var recipient = button.data('nome');
+				var modal = $(this);
+				modal.find('.modal-title').text('Mensagem para: '+ recipient);
+				modal.find('.modal-body input').val(recipient);
+			});
+		</script>
+	</footer><!--Rodape-->
+</body>
+</html>

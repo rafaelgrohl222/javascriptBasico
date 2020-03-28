@@ -7,52 +7,25 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<p>Olá Mundo!</p>
-	<!--TABELAS-->
-	<table class="table table-hover table-striped">
-		<tr><!--Cabeçalho-->
-			<th>#</th>
-			<th>Cursos</th>
-		</tr><!--Cabeçalho-->
-		<tr>
-			<td>1</td>
-			<td>Bootstrap</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>HTML</td>
-		</tr>
-	</table><!--Table-->
+
 	<!--Popovers-->
-
-	<!--Tooltip-->
-	<br><br>
-	<div class="container">
-		<p>Meu Tootip</p>
-		<button class="btn btn-success" title="Meu primeiro Tooltip" data-toggle="tooltip" >Meu Tootip</button>
-	</div><!--Tooltip-->
-
 	<div class="container">
 		<h1>Popovers</h1>
 		<button class="btn btn-primary" title="título do meu popover" data-toggle="popover" data-content="Aqui é o conteudo do meu popovers" data-placement="left">Meu Popovers</button>
-	</div>
+	</div><!--Popovers-->
 
 	<footer>
 		<!-- JQuery BOOTSTRAP-->
 		<script src="public/js/jquery.js"></script>
 		<!-- JS BOOTSTRAP-->
 		<script src="public/js/bootstrap.bundle.min.js"></script>
+		
 		<!--popover-->
 		<script>
 			$(function(){
 				$('[data-toggle="popover"]').popover();
 			});
-		</script>
-		<script type="text/javascript">
-			$(function(){
-				$('[data-toggle="tooltip"]').tooltip();
-			});
-		</script>
+		</script><!--popover-->
 	</footer><!--Rodape-->
 </body>
 </html>
