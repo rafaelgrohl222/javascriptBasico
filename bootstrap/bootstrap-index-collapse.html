@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meu Site Bootsrap</title>
+		<!-- CSS BOOTSTRAP-->
+		<link href="public/css/bootstrap.min.css" rel="stylesheet">
+		<meta charset="utf-8"><!--Caracteres especiais Português-->
+	</head><!--Head-->
+	<body>
+		<div class="container">
+			<h1>Collapse</h1>
+
+			
+			<!--data-target: chama o "ID"-->
+			<!--<a>Exemplo 1 - link</a>-->
+			<a data-toggle="collapse" href="#secreto" data-target="#secreto">Mostre mais...</a>
+
+			<!--<button>Exemplo 2 - Botão</button>-->
+			<button class="btn btn-warning" data-toggle="collapse" data-target="#secreto">Mostre mais...</button>
+
+			<!--<input>Exemplo 3 - Botão</input>-->
+			<!--type="submit": funciona-->
+			<input type="button" class="btn btn-warning" data-toggle="collapse" data-target="#secreto" name="" value="Mostre mais...">
+
+			<!--Mensagem oculta-->
+			<div class="collapse" id="secreto">
+				Mensagem Secreta.
+			</div>
+
+		</div><!--Container-->
+
+		<footer>
+			<!-- JQuery BOOTSTRAP-->
+			<script src="public/js/jquery.js"></script>
+			<!-- JS BOOTSTRAP-->
+			<script src="public/js/bootstrap.bundle.min.js"></script>
+		</footer><!--Rodape-->
+	</body><!--Body-->
+</html><!--Html-->

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meu Site Bootsrap</title>
+		<!-- CSS BOOTSTRAP-->
+		<link href="public/css/bootstrap.min.css" rel="stylesheet">
+		<meta charset="utf-8"><!--Caracteres especiais Português-->
+	</head><!--Head-->
+	<body>
+		<div class="container">
+			<h1>Scrollspy</h1>
+
+			<div class="row"> 
+				<div class="col-4">
+					<div id="livro" class="list-group">
+						<a class="list-group-item list-group-item-action" href="#c1">Capítulo 1</a>
+						<a class="list-group-item list-group-item-action" href="#c2">Capítulo 2</a>
+						<a class="list-group-item list-group-item-action" href="#c3">Capítulo 3</a>
+						<a class="list-group-item list-group-item-action" href="#c4">Capítulo 4</a>
+						<a class="list-group-item list-group-item-action" href="#c5">Capítulo 5</a>
+					</div><!--livros-->
+				</div><!--col-4-->
+
+				<!--style="text-align: justify": Texto justificado para todos os lados-->
+				<!--overflow: auto: manter a caixa subindo e descendo-->
+				<div  class="col-8" id="caixaLivro" style=" position: relative; height: 500px; overflow: auto; text-align: justify">
+					<!--data-offset="0": Onde inicia-->
+					<div data-spy="scroll" data-target="#livro" data-offset="0">
+						<h3 id="c1">Capítulo 1</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et justo mauris. Maecenas id dolor condimentum, vulputate orci convallis, accumsan tortor. Vivamus feugiat aliquet sollicitudin. Nullam accumsan ante nibh, a sagittis eros tristique quis. Aenean ultricies tellus ac arcu placerat, vel aliquet elit condimentum. Cras fringilla augue et erat dapibus, sit amet rutrum est imperdiet. Suspendisse pulvinar varius metus, at varius urna iaculis sit amet. Vestibulum varius elementum lorem eu efficitur. Nulla lacinia, lorem vel consequat vehicula, orci turpis malesuada est, id porttitor ante leo sed velit. Quisque id metus id enim consequat vehicula a a odio. Vestibulum commodo sapien a egestas facilisis.
+						</p>
+
+						<h3 id="c2">Capítulo 2</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et justo mauris. Maecenas id dolor condimentum, vulputate orci convallis, accumsan tortor. Vivamus feugiat aliquet sollicitudin. Nullam accumsan ante nibh, a sagittis eros tristique quis. Aenean ultricies tellus ac arcu placerat, vel aliquet elit condimentum. Cras fringilla augue et erat dapibus, sit amet rutrum est imperdiet. Suspendisse pulvinar varius metus, at varius urna iaculis sit amet. Vestibulum varius elementum lorem eu efficitur. Nulla lacinia, lorem vel consequat vehicula, orci turpis malesuada est, id porttitor ante leo sed velit. Quisque id metus id enim consequat vehicula a a odio. Vestibulum commodo sapien a egestas facilisis.
+						</p>
+
+						<h3 id="c3">Capítulo 3</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et justo mauris. Maecenas id dolor condimentum, vulputate orci convallis, accumsan tortor. Vivamus feugiat aliquet sollicitudin. Nullam accumsan ante nibh, a sagittis eros tristique quis. Aenean ultricies tellus ac arcu placerat, vel aliquet elit condimentum. Cras fringilla augue et erat dapibus, sit amet rutrum est imperdiet. Suspendisse pulvinar varius metus, at varius urna iaculis sit amet. Vestibulum varius elementum lorem eu efficitur. Nulla lacinia, lorem vel consequat vehicula, orci turpis malesuada est, id porttitor ante leo sed velit. Quisque id metus id enim consequat vehicula a a odio. Vestibulum commodo sapien a egestas facilisis.
+						</p>
+
+						<h3 id="c4">Capítulo 4</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et justo mauris. Maecenas id dolor condimentum, vulputate orci convallis, accumsan tortor. Vivamus feugiat aliquet sollicitudin. Nullam accumsan ante nibh, a sagittis eros tristique quis. Aenean ultricies tellus ac arcu placerat, vel aliquet elit condimentum. Cras fringilla augue et erat dapibus, sit amet rutrum est imperdiet. Suspendisse pulvinar varius metus, at varius urna iaculis sit amet. Vestibulum varius elementum lorem eu efficitur. Nulla lacinia, lorem vel consequat vehicula, orci turpis malesuada est, id porttitor ante leo sed velit. Quisque id metus id enim consequat vehicula a a odio. Vestibulum commodo sapien a egestas facilisis.
+							at varius urna iaculis sit amet. Vestibulum varius elementum lorem eu efficitur. Nulla lacinia, lorem vel consequat vehicula, orci turpis malesuada est, id porttitor ante leo sed velit. Quisque id metus id enim consequat vehicula a a odio. Vestibulum commodo sapien a egestas facilisis.
+						</p>
+
+						<h3 id="c5">Capítulo 5</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et justo mauris. Maecenas id dolor condimentum, vulputate orci convallis, accumsan tortor. Vivamus feugiat aliquet sollicitudin. Nullam accumsan ante nibh, a sagittis eros tristique quis. Aenean ultricies tellus ac arcu placerat, vel aliquet elit condimentum. Cras fringilla augue et erat dapibus, sit amet rutrum est imperdiet. Suspendisse pulvinar varius metus, at varius urna iaculis sit amet. Vestibulum varius elementum lorem eu efficitur. Nulla lacinia, lorem vel consequat vehicula, orci turpis malesuada est, id porttitor ante leo sed velit. Quisque id metus id enim consequat vehicula a a odio. Vestibulum commodo sapien a egestas facilisis.
+						</p>
+				</div><!---col-8-->
+			</div><!--row-->
+		</div><!--Container-->
+
+		<footer>
+			<!-- JQuery BOOTSTRAP-->
+			<script src="public/js/jquery.js"></script>
+			<!-- JS BOOTSTRAP-->
+			<script src="public/js/bootstrap.bundle.min.js"></script>
+			<!--Script-caixaLivro-->
+			<script type="text/javascript">
+				$('#caixaLivro').scrollspy({ target: '#livro' })
+			</script>
+		</footer><!--Rodape-->
+	</body><!--Body-->
+</html><!--Html-->
