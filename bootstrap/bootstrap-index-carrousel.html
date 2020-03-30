@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meu Site Bootsrap</title>
+		<!-- CSS BOOTSTRAP-->
+		<link href="public/css/bootstrap.min.css" rel="stylesheet">
+		<meta charset="utf-8"><!--Caracteres especiais Português-->
+	</head><!--Head-->
+	<body>
+		
+		<!--carousel-fade: Transação suave-->
+		<div class="container" style="background-color: black">
+			<h1>Carosel</h1>
+			<div id="meu_slideShow" class="carousel slide carousel-fade" data-ride="carousel" style="text-align: center">
+
+				<!--Indicadores-->
+				<!--data-slide-to="0": imagem que começa-->
+				<ol class="carousel-indicators">
+					<li data-target="#meu_slideShow" data-slide-to="0" class="active"></li>
+					<li data-target="#meu_slideShow" data-slide-to="1"></li>
+					<li data-target="#meu_slideShow" data-slide-to="2"></li>
+					<li data-target="#meu_slideShow" data-slide-to="3"></li>
+				</ol>
+
+				<!--Conteudo, imagens do Carosel-->
+				<div class="carousel-inner">
+
+					<!--Imagem 1-->
+					<!--alt"": descrição da imagem para um deficiente visual-->
+					<div class="carousel-item active">
+						<img src="public/imagens/imagem1.jpg" alt="Gato preto e branco com os olhos azuis" style="max-height: 500px">
+
+						<!--Legenda do Carosel-->
+						<!--d-none: não aparece em celular-->
+						<!--d-md-block: tamanho médio-->
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Gato</h5>
+							<p>Gato preto e branco com os olhos azuis</p>
+						</div><!--Legenda do Carosel-->
+					</div><!--Imagem 1-->
+
+					<!--Imagem 2-->
+					<div class="carousel-item">
+						<img src="public/imagens/imagem2.jpg" lt="Cachorro colorido" style="max-height: 500px">
+
+						<!--Legenda do Carosel-->
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Cachorro</h5>
+							<p>Cachorro colorido</p>
+						</div><!--Legenda do Carosel-->
+					</div><!--Imagem 2-->
+
+					<!--Imagem 3-->
+					<div class="carousel-item">
+						<img src="public/imagens/imagem3.jpg" alt="Controle de video game colorido" style="max-height: 500px">
+						
+						<!--Legenda do Carosel-->
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Controle de video game</h5>
+							<p>Controle de video game colorido</p>
+						</div><!--Legenda do Carosel-->
+					</div><!--Imagem 3-->
+
+					<!--Imagem 4-->
+					<div class="carousel-item">
+						<img src="public/imagens/imagem4.jpg" alt="Por do sol em uma prais ao entardecer e o golfinho atando fora da água" style="max-height: 500px">
+						
+						<!--Legenda do Carosel-->
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Por do sol</h5>
+							<p>Por do sol em uma prais ao entardecer</p>
+						</div><!--Legenda do Carosel-->
+					</div><!--Imagem 4-->
+
+				</div><!--carousel-inner-->
+
+				<!--Icon voltar-->
+				<!--role="button": rola automatico-->
+				<a class="carousel-control-prev" href="#meu_slideShow" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" ></span>
+					<!--Leitor automatico acessibilidade-->
+					<span class="sr-only">Anterior</span>
+				</a><!--Icon voltar-->
+
+				<!--Icon avançar-->
+				<a class="carousel-control-next" href="#meu_slideShow" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+					<!--Leitor automatico acessibilidade-->
+					<span class="sr-only">Posterior</span>
+				</a><!--Icon avançar-->
+
+			</div><!--meu_slideShow-->
+			
+		</div>
+
+		<footer>
+			<!-- JQuery BOOTSTRAP-->
+			<script src="public/js/jquery.js"></script>
+			<!-- JS BOOTSTRAP-->
+			<script src="public/js/bootstrap.bundle.min.js"></script>
+			<!--Script-caixaLivro-->
+			<script type="text/javascript">
+				$('#caixaLivro').scrollspy({ target: '#livro' })
+			</script>
+		</footer><!--Rodape-->
+	</body><!--Body-->
+</html><!--Html-->
